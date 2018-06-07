@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>stefan.gert.r@gmail.com</email>
+    <name>stefan-gr</name>
+  </maintainer>
+  <use>
+    <flag name='notification'>Enable Desktop notification via <pkg>dev-python/pygobject</pkg></flag>
+    <flag name='fm_integration'>Enable Thunar integration via <pkg>x11-misc/xdotool</pkg></flag>
+  </use>
+</pkgmetadata>
