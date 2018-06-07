@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>info@sendit.nu</email>
+    <name>Sendit</name>
+  </maintainer>
+  <longdescription>
+ Sendit is a tool for to upload file(s) & image(s) to https://sendit.nu blaaazing fast from linux and unix console. From version 3.0 sendit supporting screenshots, type sendscreen to upload your screenshot
+directly to sendit.nu
+  </longdescription>
+</pkgmetadata>
