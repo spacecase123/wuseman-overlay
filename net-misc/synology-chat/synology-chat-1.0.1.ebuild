@@ -5,7 +5,7 @@ EAPI=5
 
 inherit multilib unpacker eutils
 
-DESCRIPTION="Synology Cloudstation is the syncservice for Synology NAS."
+DESCRIPTION="Synology Chat allowing you to enjoy the instant messaging service on your PC"
 HOMEPAGE="https://www.synology.com/de-de/dsm/cloud_services"
 SRC_URI_BASE="https://global.download.synology.com/download/Tools/ChatClient/${PV}-40/Ubuntu"
 SRC_URI="amd64? ( ${SRC_URI_BASE}/x86_64/Chat_${PV}-40_amd64.deb -> Chat_${PV}-40.deb )
