@@ -21,7 +21,9 @@
 -----------------------------------------------------------
 
      Now you need to:
-
+     
+     mkdir /usr/local/portage/metadata
+     echo "masters = gentoo" > /usr/local/portage/metadata/layout.conf
      echo 'LOCAL_PORTDIR="/usr/local/portage"' >> /etc/portage/make.conf
      mkdir /usr/local/portage/wuseman-overlay
      cd /usr/local/portage
