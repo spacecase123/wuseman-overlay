@@ -36,11 +36,9 @@ src_install() {
     insinto /opt/Synology/HyperBackupExplorer/target/lib/
 #    doins -r /usr/bin/local/
     doins -r ${WORKDIR}/HyperBackupExplorer 
-    dobin synology-hyper-backup-explorer
     elog ""
-    elog "GUI is now supported for this tool."
-    elog "To run this application in GUI."
-    elog "Please start the decryption tool from /opt/Synology/SynologyCloudSyncDecryptionTool"
+    elog "GUI is now supported for this tool. If you want to runthis application in GUI then please do:"
+    elog "Start the decryption tool from /opt/Synology/SynologyCloudSyncDecryptionTool"
     elog "chmod +x /opt/Synology/SynologyCloudSyncDecryptionTool/SynologyCloudSyncDecryptionTool"
     elog "cd /opt/Synology/SynologyCloudSyncDecryptionTool/; ./SynologyCloudSyncDecryptionTool"
     elog ""

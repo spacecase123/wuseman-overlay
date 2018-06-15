@@ -36,7 +36,7 @@ src_install() {
     echo "PVR=$PVR"
     insinto /opt/Synology/SynologyCloudSyncDecryptionTool
 #    doins -r /usr/bin/local/
-    doins -r ${WORKDIR}/SynologyCloudSyncDecryptionTool
+    doins -r ${WORKDIR}/SynologyCloudSyncDecryptionTool 
     dobin SynologyCloudSyncDecryptionTool
     elog ""
     elog "GUI is now supported for this tool."

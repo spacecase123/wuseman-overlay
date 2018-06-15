@@ -3,9 +3,9 @@
 <pkgmetadata>
   <maintainer type="project">
     <email>info@sendit.nu</email>
-    <name>Synology Cloud Sync Decryption Tool</name>
+    <name>Synology Drive</name>
   </maintainer>
   <longdescription>
-A desktop tool to decrypt data encrypted by Cloud Sync.
+Drive for PC, the desktop utility of the DSM add-on package, Drive, allows you to sync and share files owned by you or shared by others between a centralized Synology NAS and multiple client computers.
   </longdescription>
 </pkgmetadata>

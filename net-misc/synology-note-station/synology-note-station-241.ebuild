@@ -4,7 +4,7 @@
 EAPI=5
 
 inherit multilib unpacker eutils
-DESCRIPTION="Cloud Station Backup is a backup service for Synology NAS."
+DESCRIPTION="Note Station let you manage all the notes/to-do list offline, right from your local computer."
 HOMEPAGE="https://www.synology.com/"
 SRC_URI_BASE="https://global.download.synology.com/download/Tools/NoteStationClient/2.1.2-${PV}/Ubuntu"
 SRC_URI="amd64? ( ${SRC_URI_BASE}/x86_64/synology-note-station-2.1.2-${PV}-linux-x64.deb -> synology-note-station-2.1.2-${PV}-linux-x64.deb )
