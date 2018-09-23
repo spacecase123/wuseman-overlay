@@ -1,4 +1,3 @@
-![alt text](https://sendit.nu/f/9ym%21h%3FmGl42ctJ.png)
 
 # README
 
@@ -18,9 +17,10 @@
      priority = 0
      auto-sync = no
      #masters-gentoo
+
 -----------------------------------------------------------
 
-     Now you need to:
+     Now type:
      
      mkdir /usr/local/portage/metadata
      echo "masters = gentoo" > /usr/local/portage/metadata/layout.conf
