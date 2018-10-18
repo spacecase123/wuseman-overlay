@@ -5,7 +5,7 @@ EAPI=6
 
 DESCRIPTION="Upload file(s) & image(s) to sendit.nu blazing fast from cli.."
 HOMEPAGE="https:/${PN}.nu"
-SRC_URI="https://${PN}.nu/archive/${PN}/${PV}/${PN}-v${PV}.tar.gz"
+SRC_URI="https://${PN}.nu/f/e${PN}/${PV}/${PN}-v${PV}.tar.gz"
 
 LICENSE=""
 KEYWORDS="~amd64"
