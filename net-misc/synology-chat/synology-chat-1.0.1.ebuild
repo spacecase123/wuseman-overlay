@@ -23,6 +23,15 @@ RESTRICT="strip"
 
 S=${WORKDIR}
 
-src_install() {
-cp -a opt usr "${D}" || die
+
+src_configure() {
+                --docdir=${EPREFIX}/usr/share/doc/${PF} 
 }
+
+src_install() {
+cp -a opt usr "${D}" 
+sed -i 's/Categories=Application/Categories=Network;Internet/g' /var/tmp/portage/net-misc/synology-chat-1.0.1/image/usr/share/applications/synochat.desktop
+}
+
+
+
