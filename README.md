@@ -1,4 +1,3 @@
-
 # README
 
    This is my personal Gentoo overlay for packages not added in portage tree and ebuilds I have not been able to find anywhere else
@@ -8,31 +7,24 @@
 
 # HOWTO
 
-     Create wuseman-overlay.conf into /etc/portage/repos.conf/
-     and add following info before you sync:
+    Create wuseman-overlay.conf into /etc/portage/repos.conf/
 
-     [wuseman-overlay]
-     # Simple example 'overlaid' ebuild repository
-     location = /usr/local/portage/wuseman-overlay
-     priority = 0
-     auto-sync = no
-     #masters-gentoo
+    cat << "EOF" > /etc/portage/repos.conf/wuseman-overlay.conf
+    [wuseman-overlay]
+    # Simple example 'overlaid' ebuild repository
+    location = /usr/local/portage/wuseman-overlay
+    priority = 0
+    auto-sync = no
+    #masters-gentoo
+    EOF
+    mkdir -p /usr/local/portage/{wuseman-overlay,metadata}
+    echo "masters = gentoo" > /usr/local/portage/metadata/layout.conf
+    echo 'LOCAL_PORTDIR="/usr/local/portage"' >> /etc/portage/make.conf
+    cd /usr/local/portage
+    git clone https://github.com/wuseman/wuseman-overlay
+    emerge --sync
+    eix -h &> /dev/null; if [[ $? -eq 0 ]]; then eix-sync; eix-update; else emerge --sync; fi
 
------------------------------------------------------------
-
-     Now type:
-     
-     mkdir /usr/local/portage/metadata
-     echo "masters = gentoo" > /usr/local/portage/metadata/layout.conf
-     echo 'LOCAL_PORTDIR="/usr/local/portage"' >> /etc/portage/make.conf
-     mkdir /usr/local/portage/wuseman-overlay
-     cd /usr/local/portage
-     git clone https://github.com/wuseman/wuseman-overlay
-     emerge --sync
-
-# TIPS
-
-     Not this time ;p
 
 # CONTACT
 
