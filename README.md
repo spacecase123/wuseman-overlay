@@ -23,7 +23,7 @@
     cd /usr/local/portage
     git clone https://github.com/wuseman/wuseman-overlay
     emerge --sync
-    eix -h &> /dev/null; if [[ $? -eq 0 ]]; then eix-sync; eix-update; else emerge --sync; fi
+    which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
 
 
 # CONTACT
