@@ -22,7 +22,6 @@
     echo 'LOCAL_PORTDIR="/usr/local/portage"' >> /etc/portage/make.conf
     cd /usr/local/portage
     git clone https://github.com/wuseman/wuseman-overlay
-    emerge --sync
     which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
 
 
