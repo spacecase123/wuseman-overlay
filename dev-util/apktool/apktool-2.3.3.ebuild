@@ -6,7 +6,6 @@ EAPI=6
 DESCRIPTION="A tool for reengineering 3rd party, closed, binary Android apps."
 HOMEPAGE="http://ibotpeaches.github.io/Apktool/"
 SRC_URI="https://bitbucket.org/iBotPeaches/apktool/downloads/${PN}_${PV}.jar -> ${P}.jar"
-#SRC_URI="https://github.com/iBotPeaches/Apktool/releases/download/v${PV}/apktool_${PV}.jar"
 
 LICENSE="Apache-2.0"
 SLOT="0"
