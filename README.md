@@ -1,9 +1,6 @@
 # README
 
-   This is my personal Gentoo overlay for packages not added in portage tree and ebuilds I have not been able to find anywhere else
-
-
-   All ebuilds have been commited by 'repoman -dx commit'..
+   This is my personal Gentoo overlay for packages not added in portage tree and ebuilds I have not been able to find anywhere else. All ebuilds have been commited by 'repoman -dx commit'..
 
 # HOWTO
 
