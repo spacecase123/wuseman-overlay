@@ -31,7 +31,7 @@
 
      Visit our homepage for the latest info and updated tools
 
-     https://sendit.nu & https://github.com/wuseman/
+     https://nr1.nu & https://github.com/wuseman/
 
 ### END!
 
