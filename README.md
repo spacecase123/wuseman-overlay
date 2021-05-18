@@ -22,6 +22,12 @@
     which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
 
 
+# References
+
+    https://github.com/gentoo/gentoo
+    https://github.com/pentoo/pentoo-overlay
+    
+
 # CONTACT
 
      If you have problems, questions, ideas or suggestions please contact
