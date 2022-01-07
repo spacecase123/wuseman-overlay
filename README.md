@@ -4,7 +4,7 @@
 
 # HOWTO
 
-    Create wuseman-overlay.conf into /etc/portage/repos.conf/
+* Create wuseman-overlay.conf into /etc/portage/repos.conf/
 
 ```sh
 cat << "EOF" > /etc/portage/repos.conf/wuseman-overlay.conf
@@ -17,7 +17,7 @@ auto-sync = no
 EOF
 ```
 
-    And run below commands for clone and sync wuseman-overlay
+* And run below commands for clone and sync wuseman-overlay
     
 ```sh
 mkdir -p /etc/portage/repos.conf/{wuseman-overlay,metadata}
