@@ -6,21 +6,27 @@
 
     Create wuseman-overlay.conf into /etc/portage/repos.conf/
 
+```sh
 cat << "EOF" > /etc/portage/repos.conf/wuseman-overlay.conf
-    [wuseman-overlay]
-    # Simple example 'overlaid' ebuild repository
-    location = /var/db/repos/wuseman-overlay
-    priority = 0
-    auto-sync = no
-    #masters-gentoo
+[wuseman-overlay]
+# Simple example 'overlaid' ebuild repository
+location = /var/db/repos/wuseman-overlay
+priority = 0
+auto-sync = no
+#masters-gentoo
 EOF
-    mkdir -p /etc/portage/repos.conf/{wuseman-overlay,metadata}
-    echo "masters = gentoo" /etc/portage/repos.conf/metadata/layout.conf
-    echo 'LOCAL_PORTDIR="/etc/portage/repos.conf/"' >> /etc/portage/make.conf
-    cd /var/db/repos
-    git clone https://github.com/wuseman/wuseman-overlay
-    which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
+```
 
+    And run below commands for clone and sync wuseman-overlay
+    
+```sh
+mkdir -p /etc/portage/repos.conf/{wuseman-overlay,metadata}
+echo "masters = gentoo" /etc/portage/repos.conf/metadata/layout.conf
+echo 'LOCAL_PORTDIR="/etc/portage/repos.conf/"' >> /etc/portage/make.conf
+cd /var/db/repos
+git clone https://github.com/wuseman/wuseman-overlay
+which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
+```
 
 # References
 
