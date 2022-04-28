@@ -21,10 +21,9 @@ EOF
     
 ```sh
 mkdir -p /etc/portage/repos.conf/{wuseman-overlay,metadata}
-echo "masters = gentoo" /etc/portage/repos.conf/metadata/layout.conf
-echo 'LOCAL_PORTDIR="/etc/portage/repos.conf/"' >> /etc/portage/make.conf
-cd /var/db/repos
-git clone https://github.com/wuseman/wuseman-overlay
+echo -e "masters = gentoo" > /etc/portage/repos.conf/metadata/layout.conf
+echo -e 'LOCAL_PORTDIR="/etc/portage/repos.conf/"' >> /etc/portage/make.conf
+git clone https://github.com/wuseman/wuseman-overlay /var/db/repos/wuseman-overlay
 which eix &> /dev/null; [[ $? -eq 0 ]] && eix-sync; eix-update || emerge --sync
 ```
 
